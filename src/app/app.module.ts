@@ -12,12 +12,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
+import { CalculatorComponent } from './calculator/calculator.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    CalculatorComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatListModule,
     FlexLayoutModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
   ],
   providers: [
     provideAnimationsAsync()

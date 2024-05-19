@@ -1,0 +1,57 @@
+<div>
+  <form (submit)="onSubmit()">
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <p class="control">
+            <input
+              type="text"
+              style="width: 100px"
+              class="input"
+              placeholder="Loan Amount"
+              [{
+              ngModel}]="userInput"
+              name="userInput"
+              required
+            />
+          </p>
+        </div>
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <p class="control">
+                <input
+                  type="text"
+                  style="width: 100px"
+                  class="input"
+                  placeholder="interest rate"
+                  [{
+                  ngModel}]="userInput"
+                  name="userInput"
+                  required
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <p class="control">
+                <input
+                  type="number"
+                  style="width: 100px"
+                  class="input"
+                  placeholder="loan term"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <button type="submit" class="button">Calculate</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
